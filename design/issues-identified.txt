@@ -1,0 +1,27 @@
+# Issues Identified
+
+1. Missing `lang` attribute on the HTML root.
+2. Missing character-set metadata.
+3. Missing responsive viewport metadata.
+4. Missing navigation menu.
+5. Missing working internal links.
+6. Missing semantic `header`, `main`, and `footer` landmarks.
+7. Stylesheet referenced a non-existent folder.
+8. Home portrait used an invalid path.
+9. Project image filename did not match the asset.
+10. Images lacked descriptive alternative text.
+11. Skills data table was absent.
+12. Project list was incomplete.
+13. Form controls had no associated labels.
+14. Form fields used unsuitable input types.
+15. Form had no required-field validation.
+16. Contact form lacked autocomplete hints.
+17. Contact footer had invalid element nesting.
+18. Footer content had inconsistent alignment.
+19. Starter colours had weak contrast.
+20. Starter stylesheet had too few selector types.
+21. Navigation had no hover or focus state.
+22. Table borders and row hierarchy were missing.
+23. Form spacing, borders, and focus styles were missing.
+24. Layout was not responsive on small screens.
+25. External links opened new tabs without `noopener` protection.

@@ -1,30 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phildah Lekalakala">
+
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>Contact Me</h1>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
-        </form>
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+<header>
+    <h1>Contact</h1> <!-- Header with navigation -->
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="form-section">
+    <h2>Get In Touch</h2>
+    <p>Feel free to reach out to me with any questions or inquiries. I look forward to hearing from you!</p>
+
+    <form action="#" method="post" class="contact-form">
+    <fieldset>
+    <legend>Contact details</legend> <!-- Form for user to input contact details -->
+    <p class="form-group">
+    <label for="name">Name</label>
+    <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Name"
+    autocomplete="name"
+    required
+    >
+    </p>
+
+    <p class="form-group">
+    <label for="surname">Surname</label>
+    <input
+    type="text"
+    id="surname"
+    name="surname"
+    placeholder="Surname"
+    autocomplete="family-name"
+    required
+    >
+    </p>
+
+    <p class="form-group">
+    <label for="contact-number">Contact Number</label>
+    <input
+    type="tel"
+    id="contact-number"
+    name="contact-number"
+    placeholder="Contact Number"
+    autocomplete="tel"
+    minlength="10"
+    required
+    >
+    </p>
+
+    <p class="form-group">
+    <label for="email">Email</label>
+    <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Email"
+    autocomplete="email"
+    required
+    >
+    </p>
+
+    <p class="form-group">
+    <label for="portfolio">Portfolio URL</label>
+    <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com" autocomplete="url">
+    </p>
+
+    <p class="form-group">
+    <label for="preferred-date">Preferred contact date</label>
+    <input type="date" id="preferred-date" name="preferred-date">
+    </p>
+
+    <p class="form-group">
+    <label for="message">Message</label>
+    <textarea
+    id="message"
+    name="message"
+    placeholder="Message"
+    autocomplete="off"
+    required
+    rows="8"
+    >
+    </textarea>
+    </p>
+    </fieldset>
+
+    <button type="submit">Send Message</button>
+    <p id="success-message" class="success-message" hidden>Message sent successfully!</p>
+    </form>
+    </section>
+</main>
+
+<footer>
+    <p>Email: <a href="mailto:phildah.lekalakala@umuzi.org">phildah.lekalakala@umuzi.org</a></p>
+    <p>Phone: <a href="tel:+270663393069">+27 066 339 3069</a></p>
+    <p>Connect with me on social media:</p>
+    <p class="social-links">
+    <a href="https://www.linkedin.com/in/phildah-lekalakala-1a1b0b1b2/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://twitter.com/phildah" target="_blank" rel="noopener noreferrer"><img src="images/twitter.svg" alt="Twitter"></a>
+    </p>
+</footer>
 </body>
 </html>

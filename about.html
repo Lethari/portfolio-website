@@ -1,30 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phildah Lekalakala">
+    <title>About Me</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>About Me</h1>
+<header>
+    <h1>About Me</h1>
+    <nav> <!-- Navigation menu with links to different pages of the website -->
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+    <h2>About Me</h2>
+    <p>I am a strong willed and determined individual with a passion for learning and growth. In my free time, I enjoy reading, exploring new technologies, and engaging in creative projects. I am always seeking opportunities to expand my knowledge and contribute to meaningful endeavors.</p>
+    </section>
+
+    <section class="skills">
+    <h3>My Background</h3>
+    <p>I started my career with Capitec Bank as a Service Consultant upto Branch Manager and have recently joined the Internal Mobility Java program offered by Umuzi.
+        I come with no formal programming background and looking forward to this learning journey.</p>
+    <h3>Technical Skills</h3>
+    <table class="skills-table"> <!--Table to display technical skills-->
+    <thead>
+    <tr>
+    <th scope="col">Skill</th>
+    <th scope="col">Proficiency</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>HTML</td>
+    <td>Beginner</td>
+    </tr>
+    <tr>
+    <td>CSS</td>
+    <td>Beginner</td>
+    </tr>
+    <tr>
+    <td>JavaScript</td>
+    <td>Beginner</td>
+    </tr>
+    </tbody>
+    </table>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+    <p>Let's build something useful together.</p>
+    <a href="mailto:phildah.lekalakala@umuzi.org">phildah.lekalakala@umuzi.org</a>
     </div>
-    
-    <div>
-        <h2>My Background</h2>
-        <p>I have been working in web development for several years.</p>
-        
-        <h3>Skills</h3>
-        <!-- Table should be here but is missing -->
-        <p>HTML, CSS, JavaScript</p>
-    </div>
-    
-    <div>
-        <h3>My Photo</h3>
-        <img src="images/profile.jpg">
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+</footer>
 </body>
 </html>

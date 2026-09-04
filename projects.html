@@ -1,30 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phildah Lekalakala">
     <title>Projects</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Projects</h1>
+<header>
+    <h1>My Projects</h1>
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="projects">
+    <h2>My Projects</h2>
+
+    <article class="project-card"> <!-- Each project is displayed in a card format with an image, description, and link to the GitHub repository -->
+    <h3>Project 1</h3>
+        <img src="images/MG Jewlery.png" alt="Project 1 screenshot">
+            <p>A responsive website built with HTML and CSS.</p>
+        <a href="https://github.com/Lethari/MG-Mangata.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </article>
+
+    <article class="project-card">
+        <h3>Project 2</h3>
+        <img src="images/LioraInk.png" alt="Liora Ink project screenshot">
+        <p>A simple custom design website built with React and Node.js.</p>
+        <a href="https://github.com/Lethari/Leora-Inc.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </article>
+
+    <article class="project-card">
+        <h3>Project 3</h3>
+        <img src="images/Little Lemon.png" alt="Project 3 screenshot">
+        <p>Responsive reservation system for a restaurant.</p>
+        <a href="https://github.com/Lethari/Front-End-Capstone.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </article>
+
+    <article class="project-card">
+        <h3>Project 4</h3>
+        <img src="images/ecommerce.png" alt="Project 4 screenshot">
+        <p>A checkout system for an e-commerce website.</p>
+        <a href="https://github.com/Lethari/Capstone-Java.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </article>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+    <p>Let's build something amazing together.</p>
+    <p><a href="mailto:phildah.lekalakala@umuzi.org">phildah.lekalakala@umuzi.org</a></p>
     </div>
-    
-    <div>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
-    </div>
-    
-    <div>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </div>
-    
-    <!-- Third project missing -->
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+</footer>
 </body>
 </html>

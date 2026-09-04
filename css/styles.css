@@ -1,0 +1,332 @@
+:root {
+	--ink: #183642;
+	--muted: #526b73;
+	--paper: #f5f1e8;
+	--surface: #fffdf8;
+	--teal: #0f6674;
+	--teal-dark: #08434d;
+	--coral: #d96c4f;
+	--line: #d8d0c2;
+}
+
+* {
+	/* Keep widths predictable when padding and borders are added. */
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: var(--ink);
+	background: var(--paper);
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.6;
+}
+
+header {
+	/* The shared header keeps branding and navigation aligned on every page. */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 1.25rem 7vw;
+	color: #fffdf8;
+	background: var(--teal-dark);
+}
+
+header h1 {
+	margin: 0;
+	font-size: clamp(1.6rem, 3vw, 2.4rem);
+	letter-spacing: 0;
+}
+
+nav ul {
+	/* Wrapping prevents the menu from overflowing on narrow screens. */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: var(--teal);
+	font-weight: 700;
+}
+
+header a {
+	color: #fffdf8;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--coral);
+}
+
+main {
+	width: min(1100px, 86vw);
+	margin: 0 auto;
+}
+
+.hero {
+	/* Grid keeps the portrait on the left and the introduction on the right. */
+	display: grid;
+	grid-template-columns: 0.9fr 1.1fr;
+	align-items: center;
+	gap: 3rem;
+	min-height: 440px;
+	padding: 4.5rem 0;
+}
+
+.hero h2 {
+	margin: 0 0 0.75rem;
+	color: var(--teal-dark);
+	font-size: clamp(2.2rem, 5vw, 4.5rem);
+	line-height: 1.05;
+}
+
+.hero-copy {
+	grid-column: 2;
+	grid-row: 1;
+	align-self: center;
+	transform: translateY(1.25rem);
+}
+
+.hero p,
+.intro p,
+.skills p,
+.form-section > p {
+	max-width: 65ch;
+	color: var(--muted);
+	font-size: 1.08rem;
+}
+
+.hero img {
+	grid-column: 1;
+	grid-row: 1;
+	width: 100%;
+	height: 500px;
+	border: 10px solid var(--surface);
+	object-fit: contain;
+	background: var(--surface);
+	box-shadow: 16px 16px 0 var(--coral);
+}
+
+.intro,
+.skills,
+.projects,
+.form-section {
+	padding: 3.5rem 0;
+	border-top: 1px solid var(--line);
+}
+
+h2,
+h3 {
+	color: var(--teal-dark);
+	line-height: 1.2;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2rem;
+}
+
+.projects > h2 {
+	grid-column: 1 / -1;
+	margin-bottom: 0;
+}
+
+.project-card {
+	padding: 1.5rem;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-top: 5px solid var(--coral);
+}
+
+.project-card img {
+	/* Containment keeps screenshots fully visible instead of cropping their edges. */
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: contain;
+	background: var(--paper);
+	margin-bottom: 1rem;
+}
+
+.skills-table {
+	width: min(100%, 650px);
+	border-collapse: collapse;
+	background: var(--surface);
+}
+
+.skills-table caption {
+	margin-bottom: 0.75rem;
+	color: var(--teal-dark);
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+.skills-table th,
+.skills-table td {
+	/* Cell padding and borders make the data scannable without relying on colour alone. */
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--line);
+	text-align: left;
+}
+
+.skills-table th {
+	color: #fffdf8;
+	background: var(--teal);
+}
+
+.skills-table tbody tr:nth-child(even) {
+	background: #eee8dc;
+}
+
+.contact-form {
+	/* Limit line length so the form remains comfortable to complete. */
+	max-width: 700px;
+	margin-top: 2rem;
+}
+
+fieldset {
+	padding: 1.5rem;
+	border: 1px solid var(--line);
+	background: var(--surface);
+}
+
+legend {
+	padding: 0 0.5rem;
+	color: var(--teal-dark);
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.35rem;
+	font-weight: 700;
+}
+
+input,
+textarea {
+	/* Inputs share one visual language and fill the available form column. */
+	width: 100%;
+	padding: 0.8rem;
+	border: 2px solid var(--line);
+	border-radius: 0;
+	color: var(--ink);
+	background: #fff;
+	font: inherit;
+}
+
+input:focus,
+textarea:focus {
+	outline: 3px solid #e9ad56;
+	border-color: var(--teal);
+}
+
+button {
+	padding: 0.8rem 1.4rem;
+	border: 0;
+	color: #fffdf8;
+	background: var(--coral);
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+	background: var(--teal-dark);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-top: 3rem;
+	padding: 2rem 7vw;
+	color: #fffdf8;
+	background: var(--teal-dark);
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+.social-links {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.social-links img {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.social-links a {
+	display: inline-block;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	width: min(1100px, 86vw);
+	margin: 0 auto;
+}
+
+footer a {
+	color: #fffdf8;
+}
+
+/* Responsive adjustments for smaller screens. */
+@media (max-width: 700px) {
+	header,
+	.hero {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	header {
+		display: block;
+	}
+
+	nav {
+		margin-top: 1rem;
+	}
+
+	.hero,
+	.projects {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero img,
+	.hero-copy {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.hero img {
+		height: 430px;
+	}
+
+	.hero-copy {
+		transform: none;
+	}
+}
