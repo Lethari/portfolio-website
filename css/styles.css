@@ -34,6 +34,7 @@ header {
 	padding: 1.25rem 7vw;
 	color: #fffdf8;
 	background: var(--teal-dark);
+	font-size: larger;
 }
 
 header h1 {
@@ -117,7 +118,7 @@ main {
 }
 
 .home-hero .tagline {
-	font-size: 1.25rem;
+	font-size: 1.4rem;
 	transform: translateX(40px);
 }
 
@@ -301,6 +302,7 @@ footer {
 
 footer p {
 	margin: 0;
+	font-size: 1.2rem;
 }
 
 .social-links {
@@ -333,8 +335,8 @@ footer p {
 }
 
 .contact-link svg {
-	width: 1.5rem;
-	height: 1.8rem;
+	width: 45px;
+	height: 32px;
 	fill: none;
 	stroke: currentColor;
 	stroke-linecap: round;
@@ -389,6 +391,7 @@ a {
 
 	.hero img {
 		height: 430px;
+		width: 90%;
 		transform: none;
 	}
 
@@ -398,6 +401,10 @@ a {
 
 	.home-hero .hero-copy {
 		transform: none;
+	}
+
+	.hero h2{
+		margin-top: 4rem;
 	}
 
 	.home-hero {
