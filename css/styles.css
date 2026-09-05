@@ -314,7 +314,7 @@ footer p {
 .social-links img {
 	display: block;
 	width: 45px;
-	height: 32px;
+	height: 35px;
 }
 
 .social-links a {
@@ -336,7 +336,7 @@ footer p {
 
 .contact-link svg {
 	width: 45px;
-	height: 32px;
+	height: 35px;
 	fill: none;
 	stroke: currentColor;
 	stroke-linecap: round;
