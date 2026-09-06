@@ -1,6 +1,6 @@
 # Phildah Lekalakala Portfolio
 
-This four-page portfolio introduces Phildah Lekalakala, an aspiring web developer, and presents her background, technical skills, projects, and contact details. It is a small static site designed to be clear, responsive, and easy to navigate.
+This four-page portfolio introduces Phildah Lekalakala, an aspiring web developer, and presents my background, technical skills, projects, and contact details. It is a small static site designed to be clear, responsive, and easy to navigate.
 
 ## Summary of Issues Found [Full issued noted issues identified](design/issues-identified.txt)
 

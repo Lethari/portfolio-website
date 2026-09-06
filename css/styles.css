@@ -180,7 +180,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.5rem;
-    width: calc(100% + 4vw);
+    width: calc(100% + 10vw);
     margin-left: -2vw;
 }
 
