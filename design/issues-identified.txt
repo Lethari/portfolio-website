@@ -1,7 +1,7 @@
 # Issues Identified
 
 1. Missing `lang` attribute on the HTML root.
-2. Missing character-set metadata.
+2. Missing <meta charset> declaration”.
 3. Missing responsive viewport metadata.
 4. Missing navigation menu.
 5. Missing working internal links.
@@ -18,10 +18,11 @@
 16. Contact form lacked autocomplete hints.
 17. Contact footer had invalid element nesting.
 18. Footer content had inconsistent alignment.
-19. Starter colours had weak contrast.
+19. Colour contrast failed accessibility standards.
 20. Starter stylesheet had too few selector types.
 21. Navigation had no hover or focus state.
 22. Table borders and row hierarchy were missing.
 23. Form spacing, borders, and focus styles were missing.
 24. Layout was not responsive on small screens.
 25. External links opened new tabs without `noopener` protection.
+26. No responsive media queries.

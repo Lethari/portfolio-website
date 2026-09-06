@@ -1,4 +1,5 @@
 :root {
+	/* Custom properties (CSS variables) make it easy to maintain a consistent colour palette. */
     --ink: #183642;
     --muted: #526b73;
     --paper: #f5f1e8;
@@ -12,6 +13,15 @@
 * {
     /* Keep widths predictable when padding and borders are added. */
     box-sizing: border-box;
+}
+
+header, nav, button {
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+button:focus-visible {
+	/* A visible focus indicator, essential for keyboard users. */
+    outline: 3px solid var(--coral);
 }
 
 body {
@@ -131,7 +141,7 @@ main {
 }
 
 .home-hero .tagline {
-    font-size: 1.27rem;
+    font-size: 1.25rem;
     transform: translateX(40px);
 }
 

@@ -2,7 +2,7 @@
 
 This four-page portfolio introduces Phildah Lekalakala, an aspiring web developer, and presents my background, technical skills, projects, and contact details. It is a small static site designed to be clear, responsive, and easy to navigate.
 
-## Summary of Issues Found [Full issued noted issues identified](design/issues-identified.txt)
+## Summary of Issues Found [Full list of issues identified](design/issues-identified.txt)
 
 - The starter pages lacked semantic landmarks, navigation, metadata, and consistent structure.
 - The home image path and one project image filename were invalid.
@@ -17,6 +17,7 @@ This four-page portfolio introduces Phildah Lekalakala, an aspiring web develope
 - All pages now use `header`, `nav`, `main`, `section`, `article`, and `footer` landmarks with a consistent four-link menu.
 - Asset paths were corrected, four project cards were retained, and every image has descriptive `alt` text. About includes a captioned, headed table with scoped column headings.
 - Contact uses labelled fields, `fieldset` and `legend`, five input types (`text`, `tel`, `email`, `url`, and `date`), required fields, minimum length, autocomplete, and a message textarea.
+- CSS expanded with hover/focus states, table styling, responsive grid/flex layouts, and clear box model demonstration.
 - Created a repository structure as recommended.
 
 ## HTML and CSS
