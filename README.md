@@ -34,7 +34,7 @@ Pages declare language, character encoding, viewport, and author metadata. Form 
 Use VS Code Live Server:
 
 1. Install the `Live Server` extension by **Ritwick Dey** from the Extensions view.
-2. Open the project folder, `foundational_starter_code`, in VS Code.
+2. Open the project folder, `portfolio-website`, in VS Code.
 3. Open `index.html` and click **Go Live** in the status bar.
 4. Your browser will open the portfolio at a localhost address, usually `http://127.0.0.1:5500/index.html`.
 
@@ -42,12 +42,13 @@ Use the navigation menu to open About, Projects, and Contact. Stop the server by
 
 ## Screenshots
 
-- [Homepage](screenshots/homepage.png)
-- [About and table](screenshots/about.png)
-- [Contact form](screenshots/form.png)
-- [Projects](screenshots/projects.png)
-- [Navigation](screenshots/navigation.png)
-- [Mobile layout](screenshots/mobile.png)
+- [Homepage](images/homepage.png)
+- [About and table](images/about.png)
+- [Contact form](images/form.png)
+- [Projects](images/projects.png)
+- [Navigation](images/navigation.jpg)
+- [Mobile layout](images/mobile.png)
+- [Before and After](images/before-after.png)
 
 The four-page layout is also shown in [the wireframe](design/wireframe.png)/ pdf wireframe as per request is attached as a pdf in classroom.
 Alternatively also available for viewing on figma: https://www.figma.com/design/OKZIIcvRM4mhw9yMGRkpoM/Portfolio?node-id=0-1&t=t3PnTAECC2sGSq0l-1
