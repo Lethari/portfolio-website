@@ -17,7 +17,7 @@ This four-page portfolio introduces Phildah Lekalakala, an aspiring web develope
 - All pages now use `header`, `nav`, `main`, `section`, `article`, and `footer` landmarks with a consistent four-link menu.
 - Asset paths were corrected, four project cards were retained, and every image has descriptive `alt` text. About includes a captioned, headed table with scoped column headings.
 - Contact uses labelled fields, `fieldset` and `legend`, five input types (`text`, `tel`, `email`, `url`, and `date`), required fields, minimum length, autocomplete, and a message textarea.
-- Created a repository stucture as per reccomendation.
+- Created a repository structure as recommended.
 
 ## HTML and CSS
 
