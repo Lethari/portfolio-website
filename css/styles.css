@@ -20,7 +20,7 @@ header, nav, button {
 }
 
 button:focus-visible {
-	/* A visible focus indicator, essential for keyboard users. */
+	/* Visible focus indicator, essential for keyboard users. */
     outline: 3px solid var(--coral);
 }
 
@@ -237,7 +237,7 @@ h3 {
 
 .skills-table th,
 .skills-table td {
-    /* Cell padding and borders make the data scannable without relying on colour alone. */
+    /* Padding and borders make the data scannable without relying on colour alone. */
     padding: 0.85rem 1rem;
     border: 1px solid var(--line);
     text-align: left;
