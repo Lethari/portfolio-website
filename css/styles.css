@@ -79,6 +79,13 @@ header nav a,
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
+header nav a[aria-current="page"] {
+    color: #f2b28f;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35rem;
+}
+
 a:hover,
 a:focus-visible {
     color: var(--coral);

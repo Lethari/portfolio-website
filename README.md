@@ -18,7 +18,7 @@ This four-page portfolio introduces Phildah Lekalakala, an aspiring web develope
 - Asset paths were corrected, four project cards were retained, and every image has descriptive `alt` text. About includes a captioned, headed table with scoped column headings.
 - Contact uses labelled fields, `fieldset` and `legend`, five input types (`text`, `tel`, `email`, `url`, and `date`), required fields, minimum length, autocomplete, and a message textarea.
 - CSS expanded with hover/focus states, table styling, responsive grid/flex layouts, and clear box model demonstration.
-- Created a repository structure as recommended.
+- Created a repository structure as recommended and validated the files through W3C after completion.
 
 ## HTML and CSS
 
